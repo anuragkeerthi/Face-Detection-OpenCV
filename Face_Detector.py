@@ -13,7 +13,7 @@ face_coordinates = trained_face_data.detectMultiScale(grayscaled_img)
 
 #print(face_coordinates)  [[ 55  49 115 115]]
  
-(x, y, w, h) = face_coordinates
+(x, y, w, h) = face_coordinates[0]
 cv2.rectangle(img, (x, y), (x+w, y+h), (0,255,0), 2)
 
 cv2.imshow('Picture', img)
